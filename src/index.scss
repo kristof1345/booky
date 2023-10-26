@@ -1,0 +1,71 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+}
+
+#header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+
+  .brand {
+    font-size: xx-large;
+    font-weight: 800;
+  }
+
+  .add-new-book-holder {
+    button {
+      border: none;
+      font-size: medium;
+      padding: 12px 50px;
+      border-radius: 0.5rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #header {
+    flex-direction: column;
+    padding: 10px 30px;
+    height: min-content;
+    gap: 15px;
+
+    .brand {
+      font-size: 2.5rem;
+      font-weight: 900;
+    }
+
+    .add-new-book-holder {
+      width: 100%;
+      text-align: center;
+      button {
+        width: 100%;
+        font-size: larger;
+        padding: 15px 50px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #header {
+    gap: 12px;
+
+    .brand {
+      font-size: 2.3rem;
+    }
+
+    .add-new-book-holder {
+      button {
+        font-size: medium;
+      }
+    }
+  }
+}
